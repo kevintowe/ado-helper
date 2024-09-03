@@ -21,7 +21,7 @@ fn main() -> Result<()> {
     let content = std::fs::read_to_string(&args.path)
 	.with_context(|| format!("could not read file `{}`", args.path.display()))?;
 
-   ktowe-grss::find_matches(&content, &args.pattern, &mut std::io::stdout());
+   ktowegrss::find_matches(&content, &args.pattern, &mut std::io::stdout());
  
     Ok(()) 
 }
