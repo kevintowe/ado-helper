@@ -1,5 +1,5 @@
 [package]
-name = "grss"
+name = "ktowe-grss"
 description = "A simple CLI"
 version = "0.1.0"
 authors = ["Kevin Towe"]
