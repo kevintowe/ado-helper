@@ -1,5 +1,5 @@
 [package]
-name = "ktowegrss"
+name = "ado_helper"
 description = "A simple CLI"
 version = "0.1.0"
 authors = ["Kevin Towe"]
@@ -8,13 +8,23 @@ readme = "README.md"
 edition = "2021"
 
 [dependencies]
-clap = { version = "4.0", features = ["derive"] }
+clap = { version = "4.0", features = ["env", "derive"] }
 anyhow = "1.0"
 log = "0.4.22"
 env_logger = "0.11.5"
 clap-verbosity-flag = "2.2.1"
+rpassword = "7.3.1"
+dirs = "5.0.1"
+reqwest = { version = "0.12.7", features = ["blocking", "json"] }
+serde = { version = "1.0.209", features = ["derive"] }
+serde_json = "1.0.127"
+base64 = "0.22.1"
+
 
 [dev-dependencies]
 assert_cmd = "2.0.14"
 predicates = "3.1.0"
 assert_fs = "1.1.1"
+
+[build-dependencies]
+clap_mangen = "0.2.23"
